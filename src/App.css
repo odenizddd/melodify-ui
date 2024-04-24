@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+ margin: 0;
+ border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #205D9E;
+  background-image: url('../public/concert-bg.jpeg');
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 500px;
+  margin-inline: auto;
+  margin-top: 200px;
+  padding: 20px;
+  background-color: #70B8FFAA;
+  gap: 16px;
+  border-radius: 16px;
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+input::placeholder {
+  font-family: sans-serif;
+  color: #00336288;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 16px;
+  padding: 12px;
+  font-family: sans-serif;
+  color: #003362;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  border: 2px solid #0000;
+}
+
+input:focus {
+  border: 2px solid #003362;
+  outline: none;
+}
+
+.login-prompt {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  background-color: #2870BD;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #fff0;
+  transition: all 0.3s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
 }
