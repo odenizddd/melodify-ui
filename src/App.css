@@ -7,6 +7,7 @@ body {
   background-color: #205D9E;
   background-image: url('../public/concert-bg.jpeg');
   background-size: cover;
+  background-position: center top; 
 }
 
 .login-card {
@@ -20,6 +21,7 @@ body {
   gap: 16px;
   border-radius: 16px;
   opacity: 1;
+  box-shadow: 2px 2px 8px #0006;
 }
 
 input::placeholder {
@@ -68,4 +70,15 @@ button {
 button:hover {
   filter: brightness(1.1);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  body {
+    background-size: auto 1000px;
+    background-position: center top; 
+  }
+
+  .login-card {
+    width: 80%;
+  }
 }
